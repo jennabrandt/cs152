@@ -1,4 +1,11 @@
 # CS152 Project Proposal
 
 ## Project Description
-The goal of this project is to investigate the ethical issues posed by the use of ML/AI in the criminal justice system.
+Climate change poses one of the greatest threats to life as we know it. The raging wildfires and massive floods in our current times were predicted years ago by scientists looking at what the effects of climate change would entail if significant measures were not taken to reduce carbon emmissions. Corporations, particularly the oil and gas industry, perpetuated and encouraged skepticism and denial of scientific facts and data. In recent years, there has been continued activism advocating for climate solutions, companies are starting to see the financial benefits of moving towards a more sustainable future, and policymakers are championing new laws and policies to deal with the multifaceted issues of climate change and climate justice.
+
+In this project, I plan to use global temperature data based on location from the [Berkeley Earth](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) dataset as well as nighttime lights satellite data from this [Google](https://developers.google.com/earth-engine/datasets/tags/nighttime) dataset. I will investigate the relationship between nighttime light use in a given region and that region's temperature to see if cities (presumably places with more light) experience greater temperatures than their surrounding suburbs and rural areas. This project will involve a neural network which takes as input satellite images and temperature labels, and then can be used to predict a temperature based on a given input nighttime satellite image. This project might provide insight into how cities, which are generally places of high vehicle emission, may be contributing to climate change (with temperature as a proxy for climate change). A possible additional inquiry could be to look at the change over time of light and temperature levels, incorporating another input variable (date) for each image, and using that in the prediction for temperature.
+
+## Project Goals
+1. Create a dataset with satellite image data corresponding to temperature labels at various locations (in the U.S.) with an additional timestamp metadata.
+2. Explore relationships between light quantity in satellite images (as determined by white or light pixels) and temperature over time.
+3. Train a neural network to predict temperature based on a given input satellite image and timestamp.

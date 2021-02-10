@@ -1,4 +1,4 @@
-# CS152 Project Proposal
+# CS152 Project Proposal: Cities and Climate Change
 
 ## Project Description
 Climate change poses one of the greatest threats to life as we know it. The raging wildfires and massive floods in our current times were predicted years ago by scientists looking at what the effects of climate change would entail if significant measures were not taken to reduce carbon emmissions. Corporations, particularly the oil and gas industry, perpetuated and encouraged skepticism and denial of scientific facts and data. In recent years, there has been continued activism advocating for climate solutions, companies are starting to see the financial benefits of moving towards a more sustainable future, and policymakers are championing new laws and policies to deal with the multifaceted issues of climate change and climate justice.

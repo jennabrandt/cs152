@@ -1,11 +1,19 @@
-# CS152 Project Proposal: Cities and Climate Change
+# CS152 Project: Tweet Classification and Comparison of Russian Propagandists and U.S. Politicians 
 
-## Project Description
-Climate change poses one of the greatest threats to life as we know it. The raging wildfires and massive floods in our current times were predicted years ago by scientists looking at what the effects of climate change would entail if significant measures were not taken to reduce carbon emmissions. Corporations, particularly the oil and gas industry, perpetuated and encouraged skepticism and denial of scientific facts and data. In recent years, there has been continued activism advocating for climate solutions, companies are starting to see the financial benefits of moving towards a more sustainable future, and policymakers are championing new laws and policies to deal with the multifaceted issues of climate change and climate justice.
+##  Introductory paragraph
+We are investigating Twitter usage among Democratic and Republican politicians as well as tweets created by Russian bots. We have created a ML algorithm to effectively categorize the author of a tweet as either a Democrat, a Republican, or a bot.
 
-In this project, I plan to use global temperature data based on location from the [Berkeley Earth](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) dataset as well as nighttime lights satellite data from this [Google](https://developers.google.com/earth-engine/datasets/tags/nighttime) dataset. I will investigate the relationship between nighttime light use in a given region and that region's temperature to see if cities (presumably places with more light) experience greater temperatures than their surrounding suburbs and rural areas. This project will involve a neural network which takes as input satellite images and temperature labels, and then can be used to predict a temperature based on a given input nighttime satellite image. This project might provide insight into how cities, which are generally places of high vehicle emission, may be contributing to climate change (with temperature as a proxy for climate change). A possible additional inquiry could be to look at the change over time of light and temperature levels, incorporating another input variable (date) for each image, and using that in the prediction for temperature.
+## Background paragraph
+This problem is hard because there are many features of Tweets that could be used to determine whether they were written by bots or real people (message length, frequency, content, time tweeted, number of followers, retweets, etc.). Furthermore, often those behind the bots (especially those in cases like this of state-sponsored disinformation campaigns) closely study the targets in order to appear as similar as possible - there is an active intent to mimic, and that makes tweets hard to tell apart, particularly as some U.S. politicians themselves have embraced disinformation. 
 
-## Project Goals
-1. Create a dataset with satellite image data corresponding to temperature labels at various locations (in the U.S.) with an additional timestamp metadata.
-2. Explore relationships between light quantity in satellite images (as determined by white or light pixels) and temperature over time.
-3. Train a neural network to predict temperature based on a given input satellite image and timestamp.
+## Transition paragraph
+Whereas other existing research has looked at tweet frequency, tweet length, and other metrics to detect bots, we looked at message content. We also compared known bots only to tweets from politicians, the individuals whom those bots are directly emulating, rather than a wider variety of tweets like previous studies have.
+
+## Details paragraph
+Technically, we found that it is difficult to assess why our algorithm categorizes certain tweets as it does. Often, bot tweets are shorter than politicians’ tweets, so perhaps instead of looking at the actual language used in the tweets, our algorithm might actually categorize tweets based on length.
+
+## Assessment paragraph
+Our algorithm correctly categorizes tweets as Democratic politician, Republican politician, or bot \__% of the time. This means that social media companies could use our algorithm to flag tweets that appear to come from sources who might intend to disrupt American democracy in some way, which would mean that the public (general users of social media) would not be subject to potentially very harmful messaging.
+
+## Sentence on ethics
+Freedom of speech is a common concern in today’s use of social media. Social media companies purport to be simply a platform for sharing one’s thoughts, and by classifying tweets as bots, and thus potentially misclassifying real human tweets as bots, we risk dismissing their thoughts as not real and part of a malicious campaign to harm American democracy.

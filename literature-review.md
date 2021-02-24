@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Literature Review"
 permalink: /literature-review/
+---
 
 # Project Literature Review
 Jenna Brandt and Erin Puckett

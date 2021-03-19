@@ -28,7 +28,7 @@ Finally, a [paper](https://arxiv.org/pdf/1802.04289.pdf) from 2018 involving res
 
 ## Bibliography
 
-A. Badawy, E. Ferrara and K. Lerman, "Analyzing the Digital Traces of Political Manipulation: The 2016 Russian Interference Twitter Campaign," 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), Barcelona, Spain, 2018, pp. 258-265, doi: 10.1109/ASONAM.2018.8508646.
+A. Badawy, E. Ferrara and K. Lerman, "Analyzing the Digital Traces of Political Manipulation: The 2016 Russian Interference Twitter Campaign," 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), Barcelona, Spain, 2018, pp. 258-265, https://doi.org/10.1109/ASONAM.2018.8508646
 
 Im, J., Chandrasekharan, E., Sargent, J., Lighthammer, P., Denby, T., Bhargava, A., Hemphill, L., Jurgens, D., & Gilbert, E. (2020). Still out there: Modeling and Identifying Russian Troll Accounts on Twitter. 12th ACM Conference on Web Science. https://doi.org/10.1145/3394231.3397889
 

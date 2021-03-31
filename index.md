@@ -91,3 +91,24 @@ We will use both a Russian trolls tweets [dataset](https://www.kaggle.com/fiveth
 posts produced on Twitter by the Russian troll accounts publicly disclosed by U.S. Congress investigation" of 2016 election interference.
 - [For Whom the Bot Tolls: A Neural Networks Approach to Measuring Political Orientation of Twitter Bots in Russia](https://doi.org/10.1177/2158244019827715): This paper uses neural networks to classify tweets from Russian accounts as being pro-regime, anti-regime, or neutral. Specifically, the researchers used a “deep feedforward neural network (multilayer perceptron [MLP]) that uses a wide range of textual features including words, word pairs, links, mentions, and hashtags to separate four contextually relevant types of bots: pro-Kremlin, neutral/other, pro-opposition, and pro-Kiev.” The results were “high-confidence predictions for most observations”. 
 - [Deep Neural Networks for Bot Detection](https://doi.org/10.1016/j.ins.2018.08.019): This paper uses neural networks with a contextual long short-term memory (LSTM) architecture that looks at both content and metadata from Twitter accounts to identify bots among real human users. The authors also used synthetic minority oversampling in order to create a large dataset for training. 
+
+
+# Introduction Outline (for 2/19/21)
+
+##  Introductory paragraph
+We are investigating Twitter usage among Democratic and Republican politicians as well as tweets created by Russian bots. We have created a ML algorithm to effectively categorize the author of a tweet as either a Democrat, a Republican, or a bot.
+
+## Background paragraph
+This problem is hard because there are many features of Tweets that could be used to determine whether they were written by bots or real people (message length, frequency, content, time tweeted, number of followers, retweets, etc.). Furthermore, often those behind the bots (especially those in cases like this of state-sponsored disinformation campaigns) closely study the targets in order to appear as similar as possible - there is an active intent to mimic, and that makes tweets hard to tell apart, particularly as some U.S. politicians themselves have embraced disinformation. 
+
+## Transition paragraph
+Whereas other existing research has looked at tweet frequency, tweet length, and other metrics to detect bots, we looked at message content. We also compared known bots only to tweets from politicians, the individuals whom those bots are directly emulating, rather than a wider variety of tweets like previous studies have.
+
+## Details paragraph
+Technically, we found that it is difficult to assess why our algorithm categorizes certain tweets as it does. Often, bot tweets are shorter than politicians’ tweets, so perhaps instead of looking at the actual language used in the tweets, our algorithm might actually categorize tweets based on length.
+
+## Assessment paragraph
+Our algorithm correctly categorizes tweets as Democratic politician, Republican politician, or bot \__% of the time. This means that social media companies could use our algorithm to flag tweets that appear to come from sources who might intend to disrupt American democracy in some way, which would mean that the public (general users of social media) would not be subject to potentially very harmful messaging.
+
+## Sentence on ethics
+Freedom of speech is a common concern in today’s use of social media. Social media companies purport to be simply a platform for sharing one’s thoughts, and by classifying tweets as bots, and thus potentially misclassifying real human tweets as bots, we risk dismissing their thoughts as not real and part of a malicious campaign to harm American democracy.

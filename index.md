@@ -41,7 +41,7 @@ For the Pytorch model, we tuned the hyperparameters, settling on X epochs, a int
 
 The confusion matrices show that both models have greater difficulty distinguishing between Democrat and Republican tweets and between LeftTroll and RightTroll tweets than between groups of the same partisan slant. In the confusion matrix for the fastai model (Image 1), we can see that X, Y, and Z are true. In the same vein, in the confusion matrix for the Pytorch model (Image 2), we can see that A, B, and C are true. This was surprising and heartening to us, as it shows that the Russian propagandists were mostly unsuccessful in emulating U.S. politicians, and that there is perhaps a smaller divide between the two parties, at least in terms of how they structure or word their tweets. 
 
-  + *Image 1*
+            *Image 1*
 
 <img src="https://user-images.githubusercontent.com/54862430/115970779-8a5b8e00-a4f9-11eb-99e9-83a3a724820b.png" width="500">
 

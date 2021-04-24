@@ -41,7 +41,7 @@ For the Pytorch model, we tuned the hyperparameters, settling on X epochs, a int
 
 The confusion matrices show that both models have greater difficulty distinguishing between Democrat and Republican tweets and between LeftTroll and RightTroll tweets than between groups of the same partisan slant. This was surprising and heartening to us, as it shows that the Russian propagandists were mostly unsuccessful in emulating U.S. politicians, and that there is perhaps a smaller divide between the two parties, at least in terms of how they structure or word their tweets. 
 
-![fastai CM](https://user-images.githubusercontent.com/54862430/115970779-8a5b8e00-a4f9-11eb-99e9-83a3a724820b.png | width=100)
+![fastai CM](https://user-images.githubusercontent.com/54862430/115970779-8a5b8e00-a4f9-11eb-99e9-83a3a724820b.png){:height="50%" width="50%"}
 
 Compared to others, our work investigates a specific inquiry as to how well a NLP model can distinguish between actual politician tweets and Russian troll tweets, divided by Democrat/Republican and RightTroll/LeftTroll. Other researchers have looked at Russian troll tweets but not in the context of comparing them to American politicians. Because we found that our NLP model can quite accurately determine American politician tweets from Russian troll tweets, our work demonstrates that social media companies may be able to use a model such as ours to flag and/or delete tweets that are likely to come from troll accounts to limit the influence of foreign governments on American politics.
 

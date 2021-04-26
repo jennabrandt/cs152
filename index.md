@@ -41,7 +41,7 @@ For the Pytorch model, we tuned the hyperparameters, settling on 10 epochs, a in
 
                               Image 1
 
-<img src="https://user-images.githubusercontent.com/54862430/116014485-5f049c00-a5ea-11eb-836a-942ac844a713.png width="700">
+<img src="https://user-images.githubusercontent.com/54862430/116014485-5f049c00-a5ea-11eb-836a-942ac844a713.png" width="700">
 
 While the fastai model had better overall accuracy than the Pytorch accuracy (87.8% vs. 81.5%), some versions of the Pytorch model had more consistent per-class accuracies than the fastai model, particularly the weighted model. Between the weighted models, while using a gamma value of .9 produced a better overall rate of accuracy, using a gamma rate of .99 produced more consistent per-class accuracies. 
 
@@ -49,11 +49,8 @@ The confusion matrices show that both models have greater difficulty distinguish
 
                               Image 2
 
-<img src="https://user-images.githubusercontent.com/54862430/115970779-8a5b8e00-a4f9-11eb-99e9-83a3a724820b.png" width="500">
+<img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="500"> <img src="https://user-images.githubusercontent.com/54862430/116016794-9119fc00-a5f2-11eb-8248-7b19c19a0453.png" width="500">
 
-                              Image 3
-
-<img src="https://user-images.githubusercontent.com/54862430/116014265-4f388800-a5e9-11eb-8f48-1f1091faa41a.png" width="500">
 
 Compared to others, our work investigates a specific inquiry as to how well a NLP model can distinguish between actual politician tweets and Russian troll tweets, divided by Democrat/Republican and RightTroll/LeftTroll. Other researchers have looked at Russian troll tweets but not in the context of comparing them to American politicians. Because we found that our NLP model can quite accurately determine American politician tweets from Russian troll tweets, our work demonstrates that social media companies may be able to use a model such as ours to flag and/or delete tweets that are likely to come from troll accounts to limit the influence of foreign governments on American politics.
 

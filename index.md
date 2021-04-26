@@ -42,8 +42,9 @@ For the Pytorch model, we tuned the hyperparameters, settling on 10 epochs, a in
 
 | Model Framework  | Weighted? | Weights  | Initial LR | Batch Size | Scheduler Gamma | Epochs  | End Accuracy | Dem. Accuracy | Rep. Accuracy | LTroll Accuracy | RTroll Accuracy | End Valid. Cost |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Pytorch  | No  | 1.0, 1.0, 1.0, 1.0 | 5  | 64  | 0.99  | 10  | 83.4%  | 61.35%  | 71.58%  | 76.28%  | 89.64%  | 339.41  |
+| Pytorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 5 | 64  | 0.99 | 10  | 79.9%  | 77.73%  | 70.52%  | 86.29%  | 77.29%  | 530.034  |
+| Pytorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 5  | 64  | 0.9  | 10 | 81.5%  | 63.36%  | 78.89%  | 82.5%  | 82.42%  | 569.205  |
 
 While the fastai model had better overall accuracy than the Pytorch accuracy (87.8% vs. 81.5%), some versions of the Pytorch model had more consistent per-class accuracies than the fastai model, particularly the weighted model. Between the weighted models, while using a gamma value of .9 produced a better overall rate of accuracy, using a gamma rate of .99 produced more consistent per-class accuracies. 
 

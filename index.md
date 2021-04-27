@@ -62,7 +62,7 @@ Compared to others’ work, our work investigates a specific inquiry: how well a
 
 Returning to our claim, that deep learning can be used to distinguish between American politician tweets and Russian troll tweets by partisan identification, we have demonstrated that it has merit by presenting the results of our model which, with moderately high accuracy, distinguish between different classes of American politicians and trolls. The magnitudes of the accuracies of the models as well as the trends in the confusion matrices show that deep learning could be successful in identifying trolls when compared to politicians on Twitter.
 
-## Conclusion
+## Conclusion and Reflection
 
 We have found that an NLP model using neural networks can be effectively used to differentiate between Democrat, Republican, LeftTroll, and RightTroll tweets. This builds on the success of previous work and gives hope to the cause of rooting out disinformation from Twitter and social media more broadly, where it can cause political polarization and influence election results.
 

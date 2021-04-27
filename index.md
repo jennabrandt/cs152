@@ -38,7 +38,7 @@ The tools we used for data analysis were the matplotlib, seaborn, and mlxtend li
 Both our fastai model and our Pytorch model yielded significant results. The fastai model provided us with an overall accuracy rate of 87.8%. We determined the per-class accuracy rates for that model to be the following: 73.2% for Democrat tweets, 73.4% for Republican tweets, 84.7% for LeftTroll tweets, and 91.7% for RightTroll tweets. On the other hand, the Pytorch model provided us with an overall accuracy of 81.5%, and class specific accuracies of 63.36% for Democrat tweets, 78.89% for Republican tweets, 82.50% for LeftTroll tweets, and 82.42% for RightTroll tweets. 
 
 For the Pytorch model, we tuned the hyperparameters to create the best possible outcome. Eventually we settled on 10 epochs, an initial learning rate of 5 and a scheduler gamma of .9, and a batch size of 64. This was achieved after trying different values for the hyperparameters as well as adding weights to the loss function to reflect the proportions of the dataset that each class represented. The full details of the hyperparameters tested and their effects on the Pytorch model can be seen in Table 1.  
-                             Table 1
+                             <center>Table 1</center>
 
 | Model Framework  | Weighted? | Weights  | Initial LR | Batch Size | Scheduler Gamma | Epochs  | End Accuracy | Dem. Accuracy | Rep. Accuracy | LTroll Accuracy | RTroll Accuracy | End Valid. Cost |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -50,7 +50,7 @@ The results from the fastai model and the variations of the Pytorch model show p
 
 The confusion matrices show that both models have greater difficulty distinguishing between Democrat and Republican tweets and between LeftTroll and RightTroll tweets than between groups of the same partisan slant. In both the confusion matrix for the fastai model (Image 1) and in the confusion matrix for the Pytorch model with gamma of .9 (Image 2), the greatest number of erroneously classified Democrat tweets were classified as Republican tweets, and vice versa. Similarly, the greatest number of erroneously classified LeftTroll tweets were classified as RightTroll tweets, and vice versa. This was surprising and heartening to us, as it shows that the Russian propagandists were mostly unsuccessful in emulating U.S. politicians, and that there is perhaps a smaller divide between the two parties, at least in terms of how they structure or word their tweets. 
 
-                             Image 1
+                             <center>Image 1</center>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="500"> 
 </p>

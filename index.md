@@ -80,7 +80,7 @@ Im, J., Chandrasekharan, E., Sargent, J., Lighthammer, P., Denby, T., Bhargava, 
 
 Kudungunta, S. & Ferrara, E. (2018). Deep Neural Networks for Bot Detection. Cornell University. [https://doi.org/10.1016/j.ins.2018.08.019](https://doi.org/10.1016/j.ins.2018.08.019)
 
-The Soufan Center. (2021). Quantifying the Q Conspiracy: A Data-Driven Approach to Understanding the Threat Posed by QAnon.[https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/](https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/) 
+The Soufan Center. (2021). Quantifying the Q Conspiracy: A Data-Driven Approach to Understanding the Threat Posed by QAnon. [https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/](https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/) 
 
 Stukal, D., Sanovich, S., Tucker, J. A., & Bonneau, R. (2019). For Whom the Bot Tolls: A Neural Networks Approach to Measuring Political Orientation of Twitter Bots in Russia. SAGE Open. [https://doi.org/10.1177/2158244019827715](https://doi.org/10.1177/2158244019827715)
 

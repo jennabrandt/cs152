@@ -52,8 +52,8 @@ The confusion matrices show that both models have greater difficulty distinguish
 
 <center><b>Confusion Matrix for Fastai Model</b></center>
 <div class="align-center">
-  <img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="500"><
-  <img src="https://user-images.githubusercontent.com/54862430/116016794-9119fc00-a5f2-11eb-8248-7b19c19a0453.png" width="500">
+  <img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="200"><
+  <img src="https://user-images.githubusercontent.com/54862430/116016794-9119fc00-a5f2-11eb-8248-7b19c19a0453.png" width="200">
 </div>
 
 Given these results, we have found that an NLP model using neural networks can be effectively used to differentiate between Democrat, Republican, LeftTroll, and RightTroll tweets. This builds on the success of previous work and gives hope to the cause of rooting out disinformation from Twitter and social media more broadly, where it can cause political polarization and influence election results.

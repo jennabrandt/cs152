@@ -1,7 +1,7 @@
 # Tweet Classification and Comparison of Russian Propagandists and U.S. Politicians
 Jenna Brandt and Erin Puckett
 
-# PAPER DRAFT
+# PAPER
 
 ## Introduction
 During the last two presidential elections in the U.S., disinformation from a variety of sources has spread on Twitter. Russian disinformation has been particularly prevalent. This has created a need for an effective way to find the trolls used to propagate that disinformation in order to remove them. As such, we are investigating Twitter usage among Democratic and Republican politicians as well as tweets created by Russian trolls, as the trolls often try to imitate politicians’ rhetoric. We have created a neural network model to effectively categorize the author of a tweet as either a Democrat, a Republican, a right-wing-imitating Russian troll, or a left-wing-imitating Russian troll. **We claim that a natural language processing (NLP) model utilizing neural networks can effectively distinguish between these types of tweets and help solve the problem of Russian disinformation on Twitter and in American politics.**

@@ -50,10 +50,10 @@ The results from the fastai model and the variations of the PyTorch model show p
 
 The confusion matrices show that both models have greater difficulty distinguishing between Democrat and Republican tweets and between LeftTroll and RightTroll tweets than between groups of the same partisan slant. In both the confusion matrix for the fastai model (Image 1) and in the confusion matrix for the PyTorch model with gamma of 0.9 (Image 2), the greatest number of erroneously classified Democrat tweets were classified as Republican tweets, and vice versa. Similarly, the greatest number of erroneously classified LeftTroll tweets were classified as RightTroll tweets, and vice versa. This was surprising and heartening to us, as it shows that the Russian propagandists were mostly unsuccessful in emulating U.S. politicians, and that there is perhaps a smaller divide between the two parties, at least in terms of how they structure or word their tweets. 
 
-<center><b>Confusion Matrix for Fastai Model</b></center>
+<center><b>Confusion Matrices for Fastai Model (Image 1) and PyTorch Model with Gamama = 0.9 (Image 2) </b></center>
 <div class="align-center">
-  <img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="200"><
-  <img src="https://user-images.githubusercontent.com/54862430/116016794-9119fc00-a5f2-11eb-8248-7b19c19a0453.png" width="200">
+  <img src="https://user-images.githubusercontent.com/54862430/116016820-a55df900-a5f2-11eb-9717-a9fd86b10af8.png" width="400"><
+  <img src="https://user-images.githubusercontent.com/54862430/116016794-9119fc00-a5f2-11eb-8248-7b19c19a0453.png" width="400">
 </div>
 
 Given these results, we have found that an NLP model using neural networks can be effectively used to differentiate between Democrat, Republican, LeftTroll, and RightTroll tweets. This builds on the success of previous work and gives hope to the cause of rooting out disinformation from Twitter and social media more broadly, where it can cause political polarization and influence election results.

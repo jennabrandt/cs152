@@ -41,6 +41,8 @@ Using the HPC enabled us to train our models in a reasonable amount of time with
 
 The tools we used for data analysis were the matplotlib, seaborn, and mlxtend libraries. They allowed us to take our fastai text classification model and PyTorch text classification model and visualize the results using confusion matrices, so we could see where the model succeeded and where it struggled. Creating visualizations also allowed us to compare between the two models.
 
+Lastly, in order to be able to create a prediction for a single tweet using our model, we implemented the same pre-processing steps we took for the training dataset, essentially creating a dataset of one tweet and assigning it an arbitrary label. While overwrought, it was effective in allowing for predictions using the saved model and vocabularly in a separate Jupyter Notebook. 
+
 ## Discussion
 Both our fastai model and our PyTorch model yielded significant results. The fastai model provided us with an overall accuracy rate of 87.8%. We determined the per-class accuracy rates for that model to be the following: 73.2% for Democrat tweets, 73.4% for Republican tweets, 84.7% for LeftTroll tweets, and 91.7% for RightTroll tweets. On the other hand, the PyTorch model provided us with an overall accuracy of 81.5%, and class specific accuracies of 63.36% for Democrat tweets, 78.89% for Republican tweets, 82.50% for LeftTroll tweets, and 82.42% for RightTroll tweets. 
 

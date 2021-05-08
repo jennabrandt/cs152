@@ -57,7 +57,8 @@ For the PyTorch model, we tuned the hyperparameters to create the best possible 
 | 4 | PyTorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 1  | 64  | 0.99  | 10 | 77.2%  | 68.8%  | 75.7%  | 74.7%  | 79.2%  | 498.563  |
 | 5 | PyTorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 1  | 64  | 0.99  | 20 | 78.3%  | 70.4  | 74.2%  | 80.4%  | 77.0%  | 495.936  |
 | 6 | PyTorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 1  | 64  | 0.99  | 30 | 79.8%  | 70.8%  | 76.3%  | 80.0%  | 80.6%  | 490.866 |
-| 7 | fastai | N/A  | N/A  | 0.001  | N/A  | N/A  | 20 (fine tuning) | 87.8%  | 73.2%  | 73.4%  | 84.7%  | 91.7%  | N/A  |
+| 7 | PyTorch | Yes  | 1.0, 1.0, 0.125, 0.0714  | 1  | 64  | 0.99  | 40 | 79.8%  | 71.3%  | 75.1%  | 81.4%  | 79.8%  | 510.69|
+| 8 | fastai | N/A  | N/A  | 0.001  | N/A  | N/A  | 20 (fine tuning) | 87.8%  | 73.2%  | 73.4%  | 84.7%  | 91.7%  | N/A  |
 
 The results from the fastai model and the variations of the PyTorch model show promise. However, they do not reveal a clear winner between the fastai and PyTorch models or even between different iteration of the PyTorch model. While the fastai model had better overall accuracy than all of PyTorch models, some versions of the PyTorch model had more consistent accuracies between classes than the fastai model, particularly the weighted PyTorch models. Between the weighted models, while using a higher initial learning rate produced a slightly better overall rate of accuracy, using an initial learning rate of 1 produced more consistent per-class accuracies. Furthermore, the unweighted version of the PyTorch model had a siginficantly lower end validation cost than the weighted version of the model, which surprised us, as we expected the weighted version to have better performance and thus lower a validation cost. However, despite the lower cost, we decided to keep the weights because we wanted to model to perform more equally across the classes. 
 

@@ -1,8 +1,6 @@
 # Tweet Classification and Comparison of Russian Propagandists and U.S. Politicians
 Jenna Brandt and Erin Puckett
 
-# PAPER
-
 ## Abstract
 Research has been done with natural language processing (NLP) and neural networks to find and classify troll tweets broadly on Twitter as well as within find and classify them on Russian Twitter. However, no research has focused on differentiating Russian trolls from the U.S. politicians they sought to mimic with their disinformative tweets during the 2016, 2018, and 2020 elections in the United States. To close that gap, we have created a model that differentiates between Democrat tweets, Republican tweets, Russian LeftTroll tweets, and Russian RightTroll tweets in order to determine if neural networks can be used to effectively distinguish between those groups. We used a pre-trained AWD LSTM text classification model from fastai and also created our own two-layer model with PyTorch. We focused more on the PyTorch model and tuned the hyperparameters to find the best possible accuracy, particularly per-class accuracy. That provided us with an overall accuracy of 79.8%, and class specific accuracy rates of 70.8% for Democrat tweets, 76.3% for Republican tweets, 80.0% for LeftTroll tweets, and 80.6% for RightTroll tweets. This significant accuracy shows the effectiveness of neural networks in NLP models and how social media companies could deploy a model like ours to prevent election-influencing disinformation from propagating on their sites. 
 
@@ -98,44 +96,3 @@ Neural Networks for Bot Detection. Cornell University. [https://doi.org/10.1016/
 The Soufan Center. (2021). Quantifying the Q Conspiracy: A Data-Driven Approach to Understanding the Threat Posed by QAnon. [https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/](https://thesoufancenter.org/research/quantifying-the-q-conspiracy-a-data-driven-approach-to-understanding-the-threat-posed-by-qanon/) 
 
 Stukal, D., Sanovich, S., Tucker, J. A., & Bonneau, R. (2019). For Whom the Bot Tolls: A Neural Networks Approach to Measuring Political Orientation of Twitter Bots in Russia. SAGE Open. [https://doi.org/10.1177/2158244019827715](https://doi.org/10.1177/2158244019827715)
-
-
-# PROJECT UPDATES
-
-# Project Update 2 (for 3/24/21)
-
-## What have you completed or tried to complete?
-
-- We have completed preparing a smaller version of our final dataset. Thus, we have taken the necessary steps to create a dataset which we can use to train a preliminary version of our model. We will go through these same steps again on the full, much larger dataset once we have finalized the neural network and modeling approach. The steps to clean our smaller dataset involved the following:
-
-  - Downloading the datasets from Kaggle
-  - Loading the csv files into a Jupyter notebook
-  - Eliminating exccess data/columns in the dataset that are not useful for our purposes
-  - Removing non-ascii characters
-  - Dividing the data into classes
-  - Shuffling the data in those classes
-  - Selecting the first 1000 elements from each of the four shuffled classes
-  - Concatenating all the chosen elements into a small dataset of 4000 items
-  - Writing the small dataset to a new csv file
-
-- Additionally, we have determined the steps we will take to create a neural network as follows:
-
-  - Using fastai to create a preliminary model using the text classifier libraries
-  - Then creating a neural network model from scratch using PyTorch textsentiment libraries
-
-## What issues have you encountered?
-So far, the only issue we encountered was a decision on whether to start immediately with PyTorch or to create a first (and hopefully quicker and easier) version of the model using fastai. We met with Prof. Clark who recommended that we start with fastai to get something working and then move on to a more in-depth approach to creating a more customized model for our dataset. We are looking forward to doing this.
-
-
-# Project Update 1 (for 3/3/21)
-
-## Software we will use:
-We will use PyTorch, linked [here](https://pytorch.org/), specifically the TextSentiment model.
-
-## Dataset we will use:
-We will use both a Russian trolls tweets [dataset](https://www.kaggle.com/fivethirtyeight/russian-troll-tweets) as well as a [dataset](https://www.kaggle.com/kapastor/democratvsrepublicantweets) that contains tweets of Democratic and Republican politicians.
-
-## Overview of neural network specifications:
-- _Type of neural network:_ We will be using the PyTorch TextSentiment model, which is a recurrent neural network.
-- _Shape and type of inputs:_ The input dataset will contain tweets with labels corresponding to their classes (Russian, Democrat, or Republican). The shape of the input will vectors corresponding to words which converted via embedding. The size of the word embedding vector can be determined; we will start with a embedding dimension of 10. We will also use the size of the total number of words in the dataset in creating the embedding table, which will have size V x D, where V is the vocabulary size and D is the embedding dimension.
-- _Shape and type of outputs:_ The outputs will be the predicted classes, Russian, Democrat, or Republican, for each tweet. We are doing classification, so the shape of the output for a single input image will be a 3 x 1 vector corresponding to the likelihood of each predicted class.
